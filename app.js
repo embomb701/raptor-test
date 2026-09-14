@@ -160,7 +160,7 @@ const getAnswer10 = () => {
 const getAnswer11 = () => {
     const a11 = document.getElementById('answer11').value;
     audio.play();
-    if (a11 == 'b)') {
+    if (a11 == 'c)') {
         answer11 = 5;
         scoreArray[10] = '✔';
     } else {
