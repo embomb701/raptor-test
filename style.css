@@ -1,0 +1,139 @@
+:root {
+    --rps-black: #0c0c0c;
+    --rps-charcoal: #1b1b1b;
+    --rps-orange: #ff6a13;
+    --rps-orange-dark: #d95400;
+    --rps-white: #ffffff;
+    --rps-offwhite: #f6f6f4;
+    --rps-gray: #4d4d4d;
+    --rps-light-gray: #d8d8d6;
+}
+
+html, body {
+    background-color: var(--rps-offwhite);
+}
+
+.meter-icon {
+    vertical-align: middle;
+    height: 1.3em;
+    width: auto;
+    margin: 0 2px;
+    border-radius: 2px;
+}
+
+h1, h2, h3, h4, h5 {
+    color: var(--rps-black);
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+h3 {
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+header {
+    background-color: var(--rps-black);
+    border-bottom: 4px solid var(--rps-orange);
+    padding: 14px 10px !important;
+    margin: -1rem -1rem 1rem -1rem;
+    width: calc(100% + 2rem);
+}
+
+header h2 {
+    color: var(--rps-white);
+    margin: 0;
+    font-weight: 700;
+}
+
+header .tagline {
+    color: var(--rps-orange);
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin: 2px 0 0 0;
+}
+
+header img, header svg {
+    max-width: 220px;
+}
+
+.hidden {
+    display: none;
+}
+
+p bold {
+    position: relative;
+    left: 10px;
+    font-weight: bold;
+}
+
+.question {
+    position: relative;
+    left: 10px;
+    padding: 14px;
+    margin-bottom: 6px;
+    border-left: 3px solid var(--rps-light-gray);
+    background-color: var(--rps-white);
+}
+
+.question:hover {
+    border-left: 3px solid var(--rps-orange);
+}
+
+.question bold {
+    color: var(--rps-black);
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-bottom: 2px solid var(--rps-orange);
+    padding-bottom: 2px;
+}
+
+select#answer1, select[id^="answer"] {
+    border: 1px solid var(--rps-gray);
+    border-radius: 4px;
+    padding: 4px 6px;
+    background-color: var(--rps-white);
+}
+
+select[id^="answer"]:focus {
+    outline: 2px solid var(--rps-orange);
+    border-color: var(--rps-orange);
+}
+
+label[id^="a"] {
+    font-weight: 600;
+}
+
+.notes {
+    color: var(--rps-orange-dark);
+}
+
+.button, button.button {
+    background-color: var(--rps-orange);
+    color: var(--rps-white);
+    border: none;
+    border-radius: 4px;
+    padding: 12px 22px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.button:hover, button.button:hover {
+    background-color: var(--rps-orange-dark);
+}
+
+footer.rps-footer {
+    background-color: var(--rps-black);
+    color: var(--rps-light-gray);
+    padding: 16px;
+    margin: 24px -1rem -1rem -1rem;
+    width: calc(100% + 2rem);
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+footer.rps-footer strong {
+    color: var(--rps-orange);
+}

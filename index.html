@@ -1,0 +1,726 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta http-equiv="Content-type" content="text/xhtml; charset=UTF-8" />
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>Raptor Power Systems Employment Screener</title>
+</head>
+<body>
+    <main class="grid-container">
+        <header class="grid-x grid-padding-x grid-padding-y">
+            <div class="small-12 large-3 cell">
+                <svg viewBox="0 0 240 72" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Raptor Power Systems logo">
+                    <rect x="0" y="0" width="240" height="72" rx="8" fill="#0c0c0c" />
+                    <polygon points="18,54 18,18 34,18 34,32 50,14 50,54 34,54 34,42" fill="#ff6a13" />
+                    <text x="64" y="38" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="24" fill="#ffffff">RAPTOR</text>
+                    <text x="65" y="56" font-family="Arial, Helvetica, sans-serif" font-weight="600" font-size="12" letter-spacing="2" fill="#ff6a13">POWER SYSTEMS</text>
+                </svg>
+            </div>
+            <div class="small-12 large-9 cell">
+                <h2>Raptor Power Systems Employment Screener</h2>
+                <p class="tagline">Technical Aptitude &amp; Safety Assessment — PDU · RPP · Switchgear</p>
+            </div>
+        </header>
+        <hr />
+
+        <h3>📝 Applicant Information</h3>
+        <form class="grid-x grid-padding-x" id="topData">
+            <div class="small-12 medium-6 large-3 cell">
+                <label>
+                    First Name:
+                    <input type="text" id="fname" name="name" placeholder="First Name" />
+                </label>
+            </div>
+
+
+            <div class="small-12 medium-6 large-3 cell">
+                <label>
+                    Last Name:
+                    <input type="text" id="lname" name="name" placeholder="Last Name" />
+                </label>
+            </div>
+
+            <div class="small-12 medium-6 large-3 cell">
+                <label>
+                    Date:
+                    <input type="date" id="date" name="date" placeholder="" />
+                </label>
+            </div>
+
+            <div class="small-12 medium-6 large-3 cell">
+                <label>
+                    Email:
+                    <input type="email" id="email" name="email" placeholder="email@email.com" />
+                </label>
+            </div>
+        </form>
+
+        <!--------------------Test---------------------------------->
+        <p>
+            Welcome to the Raptor Power Systems Employment Screening Exam. Please take your time
+            and read the questions carefully before selecting an answer. You can change your answers
+            as many times as you like before clicking “Submit Answers” at the bottom of the page.
+            Good Luck!
+        </p>
+        <h3> Test Questions</h3>
+        <hr />
+        <form class="question" id="question1">
+
+            <bold>Question #1</bold>
+            <p>
+                <br />
+                Refer to the figure below.<br />
+                The three-phase 120-volt AC status/alarm circuit for Panel E1 (RPP-1) has stopped reporting although switch S1 is closed.<br />
+                The following voltage readings are taken with a high-impedance Digital Multi-meter:<br />
+                <br />
+                Measurements taken from (41 - 42:  120 vac)  |  Measurements taken from (1 - 41: 120 vac)<br />
+                Measurements taken from (41 - 43:  120 vac)  |  Measurements taken from (2 - 42: 120 vac)<br />
+                Measurements taken from (42 - 43:  120 vac)  |  Measurements taken from (3 - 43:   0 vac)<br />
+                <br />
+                To restore the E1 controller board, the action required to be taken is:<br />
+
+                a) Open switch S1, replace fuse F3, close switch S1.<br />
+
+                b) Open switch S1, replace the E1 controller board, close switch S1.<br />
+
+                c) Open switch S1, replace fuses F1 &amp; F2, close switch S1.<br />
+
+                d) Open main power circuit supplying L1, L2 &amp; L3, replace switch S1, close main power circuit, close switch S1.<br />
+            </p>
+
+            <div class="small-12 medium-6 large-3 cell">
+                <label id="a1">Answer Question 1.</label>
+                <select onchange="getAnswer1()" type="text" id="answer1">
+                    <option value="sel)"> Select ❓ ➡</option>
+                    <option value="a)">a)</option>
+                    <option value="b)">b)</option>
+                    <option value="c)">c)</option>
+                    <option value="d)">d)</option>
+                </select>
+            </div>
+            <img src="img/Fig1 Q1.png" /> <br />
+
+        </form>
+
+
+        <form class="question" id="question2">
+            <hr />
+            <bold>Question #2</bold>
+            <p>
+                <br />
+                There are three strings of forty 12-volt batteries in parallel, which provide 15 minutes of backup time per string. In the second
+                string battery number 18 opens. How much backup time is now available?<br />
+
+                a) 42.34 minutes.<br />
+
+                b) 0 Minutes.<br />
+
+                c) 480 VDC.<br />
+
+                d) 30 Minutes.<br />
+            </p>
+
+            <div class="small-12 medium-6 large-3 cell">
+                <label id="a2">Answer Question 2.</label>
+                <select onchange="getAnswer2()" type="text" id="answer2">
+                    <option value="sel)"> Select ❓ ➡</option>
+                    <option value="a)">a)</option>
+                    <option value="b)">b)</option>
+                    <option value="c)">c)</option>
+                    <option value="d)">d)</option>
+                </select>
+            </div>
+        </form>
+
+
+        <form class="question" id="question3">
+            <hr />
+            <bold>Question #3</bold>
+            <p>
+                <br />
+                Refer to the transformer schematic below. The primary winding (N1) has 500 turns and is
+                connected to 480 VAC. The secondary winding (N2) has 100 turns. What is the secondary
+                voltage V2?<br />
+
+                a) 2,400 VAC.<br />
+
+                b) 96 VAC.<br />
+
+                c) 480 VAC.<br />
+
+                d) 100 VAC.<br />
+            </p>
+
+            <div class="small-12 medium-6 large-3 cell">
+                <label id="a3">Answer Question 3.</label>
+                <select onchange="getAnswer3()" type="text" id="answer3">
+                    <option value="sel)"> Select ❓ ➡</option>
+                    <option value="a)">a)</option>
+                    <option value="b)">b)</option>
+                    <option value="c)">c)</option>
+                    <option value="d)">d)</option>
+                </select>
+            </div>
+            <img src="img/Fig5 Q3 Transformer.png" /> <br />
+        </form>
+
+
+        <form class="question" id="question4">
+            <hr />
+            <bold>Question #4</bold>
+            <p>
+                <br />
+                Which image represents an IGBT?<br />
+
+                a) <br />
+
+                b) <br />
+
+                c) <br />
+
+                d) <br />
+            </p>
+
+            <div class="small-12 medium-6 large-3 cell">
+                <label id="a4">Answer Question 4.</label>
+                <select onchange="getAnswer4()" type="text" id="answer4">
+                    <option value="sel)"> Select ❓ ➡</option>
+                    <option value="a)">a)</option>
+                    <option value="b)">b)</option>
+                    <option value="c)">c)</option>
+                    <option value="d)">d)</option>
+                </select>
+            </div>
+            <img src="img/Fig3 Q4.png" /> <br />
+        </form>
+
+        <form class="question" id="question5">
+            <hr />
+            <bold>Question #5</bold>
+            <p>
+                <br />
+                What unit of measurement is used for measuring capacitors?<br />
+
+                a) Farets.<br />
+
+                b) Flux.<br />
+
+                c) Ohms.<br />
+
+                d) Capacitance.<br />
+            </p>
+
+            <div class="small-12 medium-6 large-3 cell">
+                <label id="a5">Answer Question 5.</label>
+                <select onchange="getAnswer5()" type="text" id="answer5">
+                    <option value="sel)"> Select ❓ ➡</option>
+                    <option value="a)">a)</option>
+                    <option value="b)">b)</option>
+                    <option value="c)">c)</option>
+                    <option value="d)">d)</option>
+                </select>
+            </div>
+        </form>
+
+        <form class="question" id="question6">
+            <hr />
+            <bold>Question #6</bold>
+            <p>
+                <br />
+                Refer to the figure below. R1 and R2 are connected in series across constant voltage
+                source V1. R2 is a variable resistor and its resistance is slowly increased. A voltmeter
+                remains connected across R1 the entire time. As R2 increases, the voltage read across R1
+                will:<br />
+
+                a) Increase.<br />
+
+                b) Decrease.<br />
+
+                c) Remain the same.<br />
+
+                d) Immediately drop to zero.<br />
+            </p>
+
+            <div class="small-12 medium-6 large-3 cell">
+                <label id="a6">Answer Question 6.</label>
+                <select onchange="getAnswer6()" type="text" id="answer6">
+                    <option value="sel)"> Select ❓ ➡</option>
+                    <option value="a)">a)</option>
+                    <option value="b)">b)</option>
+                    <option value="c)">c)</option>
+                    <option value="d)">d)</option>
+                </select>
+            </div>
+
+            <img width="440" src="img/Fig2 Q6.png" /> <br />
+        </form>
+
+        <form class="question" id="question7">
+            <hr />
+            <bold>Question #7</bold>
+            <p>
+                <br />
+                What type of waveform is produced by the electrical device depicted in this image?<br />
+
+                a) AC waveform.<br />
+
+                b) DC waveform.<br />
+
+                c) Pulse Width Modulated (PWM) waveform.<br />
+
+                d) Sinusoidal waveform.<br />
+            </p>
+
+            <div class="small-12 medium-6 large-3 cell">
+                <label id="a7">Answer Question 7.</label>
+                <select onchange="getAnswer7()" type="text" id="answer7">
+                    <option value="sel)"> Select ❓ ➡</option>
+                    <option value="a)">a)</option>
+                    <option value="b)">b)</option>
+                    <option value="c)">c)</option>
+                    <option value="d)">d)</option>
+                </select>
+            </div>
+            <img width="350" src="img/rect.png" /> <br />
+        </form>
+
+
+        <form class="question" id="question8">
+            <hr />
+            <bold>Question #8</bold>
+            <p>
+                <br />
+                The definition of the total opposition to current flow is:      <br />
+
+                a) Resistance.      <br />
+
+                b) Reactance.      <br />
+
+                c) Impedance.      <br />
+
+                d) All of the above.      <br />
+            </p>
+
+            <div class="small-12 medium-6 large-3 cell">
+                <label id="a8">Answer Question 8.</label>
+                <select onchange="getAnswer8()" type="text" id="answer8">
+                    <option value="sel)"> Select ❓ ➡</option>
+                    <option value="a)">a)</option>
+                    <option value="b)">b)</option>
+                    <option value="c)">c)</option>
+                    <option value="d)">d)</option>
+                </select>
+            </div>
+        </form>
+
+        <form class="question" id="question9">
+            <hr />
+            <bold>Question #9</bold>
+            <p>
+                <br />
+                The amount of power (watts) that a given resistor dissipates is determined by:<br />
+
+                a) Resistance value.<br />
+
+                b) Current flowing divided by 2, and Current flowing squared.<br />
+
+                c) Conductance value.<br />
+
+                d) Current flowing times voltage.<br />
+            </p>
+
+            <div class="small-12 medium-6 large-3 cell">
+                <label id="a9">Answer Question 9.</label>
+                <select onchange="getAnswer9()" type="text" id="answer9">
+                    <option value="sel)"> Select ❓ ➡</option>
+                    <option value="a)">a)</option>
+                    <option value="b)">b)</option>
+                    <option value="c)">c)</option>
+                    <option value="d)">d)</option>
+                </select>
+            </div>
+        </form>
+
+        <form class="question" id="question10">
+            <hr />
+            <bold>Question #10</bold>
+            <p>
+                <br />
+                If 4,000 cycles of a sine wave are generated in 10 seconds, the sine wave has a:<br />
+
+                a) Period of 0.25 milliseconds and a frequency of 4,000 Hertz.<br />
+
+                b) Period of 2.50 milliseconds and frequency of 400 Hertz.<br />
+
+                c) Period of 0.025 seconds and a frequency of 40 Hertz.<br />
+
+                d) Period of 0.250 seconds and a frequency of 4 Hertz.<br />
+            </p>
+
+            <div class="small-12 medium-6 large-3 cell">
+                <label id="a10">Answer Question 10.</label>
+                <select onchange="getAnswer10()" type="text" id="answer10">
+                    <option value="sel)"> Select ❓ ➡</option>
+                    <option value="a)">a)</option>
+                    <option value="b)">b)</option>
+                    <option value="c)">c)</option>
+                    <option value="d)">d)</option>
+                </select>
+            </div>
+        </form>
+
+        <form class="question" id="question11">
+            <hr />
+            <bold>Question #11</bold>
+            <p>
+                <br />
+                Refer to the image below. What needs to be done to perform offline service on PDU2 safely and without disturbing the critical load?<br />
+
+                a) Open PDU2 Out Bkr, then open PDU2 In Bkr, and lock out both breakers (LOTO).<br />
+
+                b) Close the Bypass Bkr, then open PDU2 In Bkr and PDU2 Out Bkr, and lock these breakers out.<br />
+
+                c) Close the Bypass Bkr, open the Main Output Bkr, then open PDU2 In Bkr and PDU2 Out Bkr.<br />
+
+                d) Close the Bypass Bkr and open all three PDU In and Out breakers, then lock them out.<br />
+            </p>
+
+            <div class="small-12 medium-6 large-3 cell">
+                <label id="a11">Answer Question 11.</label>
+                <select onchange="getAnswer11()" type="text" id="answer11">
+                    <option value="sel)"> Select ❓ ➡</option>
+                    <option value="a)">a)</option>
+                    <option value="b)">b)</option>
+                    <option value="c)">c)</option>
+                    <option value="d)">d)</option>
+                </select>
+            </div>
+            <img width="650" src="img/ups.png" /> <br />
+        </form>
+
+        <form class="question" id="question12">
+            <hr />
+            <bold>Question #12</bold>
+            <p>
+                <br />
+You need to connect a building monitoring system to a Raptor Power Systems PDU's Modbus TCP interface
+                to remotely read metering data. Which of the following correctly describes how this connection
+                and data exchange actually works?<br />
+
+                a) The monitoring system (the client/master) opens a TCP connection to the PDU's IP address on
+                port 502 and polls the PDU's holding/input registers; the PDU (the server/slave) only replies
+                when it is queried.<br />
+
+                b) The PDU broadcasts its readings to the entire network once per second over UDP, so no IP
+                address or polling is required.<br />
+
+                c) The monitoring system and the PDU exchange data over RS-232 serial cables plugged into
+                their Ethernet ports.<br />
+
+                d) The PDU automatically emails a report to the monitoring system whenever a reading changes.<br />
+            </p>
+
+            <div class="small-12 medium-6 large-3 cell">
+                <label id="a12">Answer Question 12.</label>
+                <select onchange="getAnswer12()" type="text" id="answer12">
+                    <option value="sel)"> Select ❓ ➡</option>
+                    <option value="a)">a)</option>
+                    <option value="b)">b)</option>
+                    <option value="c)">c)</option>
+                    <option value="d)">d)</option>
+                </select>
+            </div>
+        </form>
+
+        <form class="question" id="question13">
+            <hr />
+            <bold>Question #13</bold>
+            <p>
+                <br />
+                Refer to the diagram below. A 24 VDC power supply is fed from 120 VAC and powers an HMI
+                and two field sensors from its +24V and COM output terminals. To verify the power supply
+                is producing good output, what should the multimeter be set to, and where should the
+                leads be placed?<br />
+
+                a) <img class="meter-icon" src="img/icon_dcv.png" alt="DC voltage symbol" /> — leads across the +24V and COM output terminals.<br />
+
+                b) <img class="meter-icon" src="img/icon_acv.png" alt="AC voltage symbol" /> — leads across the 120 VAC input terminals only.<br />
+
+                c) <img class="meter-icon" src="img/icon_ohm.png" alt="Resistance symbol" /> — leads across the output terminals with the supply still powered.<br />
+
+                d) <img class="meter-icon" src="img/icon_dca.png" alt="DC current symbol" /> — leads placed across the output terminals in parallel.<br />
+            </p>
+
+            <div class="small-12 medium-6 large-3 cell">
+                <label id="a13">Answer Question 13.</label>
+                <select onchange="getAnswer13()" type="text" id="answer13">
+                    <option value="sel)"> Select ❓ ➡</option>
+                    <option value="a)">a)</option>
+                    <option value="b)">b)</option>
+                    <option value="c)">c)</option>
+                    <option value="d)">d)</option>
+                </select>
+            </div>
+            <img width="440" src="img/Fig7 Q13 PowerSupply.png" /> <br />
+        </form>
+
+        <form class="question" id="question14">
+            <hr />
+            <bold>Question #14</bold>
+            <p>
+                <br />
+                The term "Graceful Shutdown" refers to which of the following?<br />
+
+                a) Computers/critical loads being commanded to shut down in an orderly sequence.<br />
+
+                b) A PDU output breaker being opened without using the EPO.<br />
+
+                c) A single source being shut down on a dual-fed rack.<br />
+
+                d) Following the shutdown procedure and taking 10 seconds between each step.<br />
+            </p>
+
+            <div class="small-12 medium-6 large-3 cell">
+                <label id="a14">Answer Question 14.</label>
+                <select onchange="getAnswer14()" type="text" id="answer14">
+                    <option value="sel)"> Select ❓ ➡</option>
+                    <option value="a)">a)</option>
+                    <option value="b)">b)</option>
+                    <option value="c)">c)</option>
+                    <option value="d)">d)</option>
+                </select>
+            </div>
+        </form>
+
+        <form class="question" id="question15">
+            <hr />
+            <bold>Question #15</bold>
+            <p>
+                <br />
+                The parameters that describe the load capacity of a PDU can be expressed by which terms:<br />
+
+                a) Kilowatts.<br />
+
+                b) Kilovolt-amps.<br />
+
+                c) Amperes.<br />
+
+                d) All of the above.<br />
+            </p>
+
+            <div class="small-12 medium-6 large-3 cell">
+                <label id="a15">Answer Question 15.</label>
+                <select onchange="getAnswer15()" type="text" id="answer15">
+                    <option value="sel)"> Select ❓ ➡</option>
+                    <option value="a)">a)</option>
+                    <option value="b)">b)</option>
+                    <option value="c)">c)</option>
+                    <option value="d)">d)</option>
+                </select>
+            </div>
+        </form>
+
+        <form class="question" id="question16">
+            <hr />
+            <bold>Question #16</bold>
+            <p>
+                <br />
+                You are about to perform an insulation resistance test on a 480V feeder cable using a
+                megohmmeter (megger) before it is re-energized. Which of the following is required
+                BEFORE connecting the megger's test leads to the cable?<br />
+
+                a) Verify the cable is de-energized, isolated (LOTO), and any stored capacitive charge
+                is discharged.<br />
+
+                b) Set the megger's test voltage higher than the cable's rated voltage to get a stronger reading.<br />
+
+                c) Leave the far end of the cable connected to its load for a more realistic reading.<br />
+
+                d) Remove PPE so the meter display can be read more easily.<br />
+            </p>
+
+            <div class="small-12 medium-6 large-3 cell">
+                <label id="a16">Answer Question 16.</label>
+                <select onchange="getAnswer16()" type="text" id="answer16">
+                    <option value="sel)"> Select ❓ ➡</option>
+                    <option value="a)">a)</option>
+                    <option value="b)">b)</option>
+                    <option value="c)">c)</option>
+                    <option value="d)">d)</option>
+                </select>
+            </div>
+        </form>
+
+        <form class="question" id="question17">
+            <hr />
+            <bold>Question #17</bold>
+            <p>
+                <br />
+                If the feedback signal is removed from a voltage regulator set to maintain a selected voltage, the regulator output voltage
+                will have the tendency to:<br />
+
+                a) Drift higher or lower.<br />
+
+                b) Decrease.<br />
+
+                c) Increase.<br />
+
+                d) Remain constant<br />
+            </p>
+
+            <div class="small-12 medium-6 large-3 cell">
+                <label id="a17">Answer Question 17.</label>
+                <select onchange="getAnswer17()" type="text" id="answer17">
+                    <option value="sel)"> Select ❓ ➡</option>
+                    <option value="a)">a)</option>
+                    <option value="b)">b)</option>
+                    <option value="c)">c)</option>
+                    <option value="d)">d)</option>
+                </select>
+            </div>
+        </form>
+
+        <form class="question" id="question18">
+            <hr />
+            <bold>Question #18</bold>
+            <p>
+                <br />
+                You're assigned to remove a section of bus-conductor from an 800A, 480 VAC power
+                distribution panel to install a current transformer. A note from the site electrician
+                says the sub-station breaker is open and the panel is dead. How do you proceed?<br />
+
+                a) Loosen all the bolts on the section to be removed, then remove the end bolts last
+                while supporting the bus.<br />
+
+                b) Mark the bus ends before removal so it lines up correctly on reinstallation.<br />
+
+                c) Don't proceed until you verify with a technician/electrician that the note's breaker
+                is in fact the one supplying this panel, and you have your own properly tagged lockout
+                on it.<br />
+
+                d) Test the bus for voltage phase-to-phase and phase-to-ground; if it reads zero, verify
+                the meter on a known live source first, then short the bus conductors together upstream
+                before working on it.<br />
+            </p>
+
+            <div class="small-12 medium-6 large-3 cell">
+                <label id="a18">Answer Question 18.</label>
+                <select onchange="getAnswer18()" type="text" id="answer18">
+                    <option value="sel)"> Select ❓ ➡</option>
+                    <option value="a)">a)</option>
+                    <option value="b)">b)</option>
+                    <option value="c)">c)</option>
+                    <option value="d)">d)</option>
+                </select>
+            </div>
+        </form>
+
+        <form class="question" id="question19">
+            <hr />
+            <bold>Question #19</bold>
+            <p>
+                <br />
+                Refer to the below logic diagram below. What option provides the Close Permissive signal to the output circuit breaker?
+                <br />
+
+                a) Bravo is low, and Charlie is high.<br />
+
+                b) Bravo and Charlie are high.<br />
+
+                c) Charlie, Delta, and Echo are high.<br />
+
+                d) Alpha and Echo are high.<br />
+            </p>
+
+            <div class="small-12 medium-6 large-3 cell">
+                <label id="a19">Answer Question 19.</label>
+                <select onchange="getAnswer19()" type="text" id="answer19">
+                    <option value="sel)"> Select ❓ ➡</option>
+                    <option value="a)">a)</option>
+                    <option value="b)">b)</option>
+                    <option value="c)">c)</option>
+                    <option value="d)">d)</option>
+                </select>
+            </div>
+            <img width="600" src="img/Fig4 Q19.png" />
+        </form>
+
+        <form class="question" id="question20">
+            <hr />
+            <bold>Question #20</bold>
+            <p>
+                <br />
+                You are connecting a resistive load bank to a PDU rated for 100 kVA at 0.8 power factor to perform a full load capacity test.
+                The load bank should be set to:
+                <br />
+
+                a) 100 kilowatts.<br />
+
+                b) 80 kilowatts.<br />
+
+                c) 20 kilowatts.<br />
+
+                d) 125 kilowatts.<br />
+            </p>
+
+            <div class="small-12 medium-6 large-3 cell">
+                <label id="a20">Answer Question 20.</label>
+                <select onchange="getAnswer20()" type="text" id="answer20">
+                    <option value="sel)"> Select ❓ ➡</option>
+                    <option value="a)">a)</option>
+                    <option value="b)">b)</option>
+                    <option value="c)">c)</option>
+                    <option value="d)">d)</option>
+                </select>
+            </div>
+        </form>
+
+        <form class="question" id="question21">
+            <hr />
+            <bold>Bonus Question</bold>
+            <p>
+                <br />
+                An arc flash boundary is the term used to describe the distance at which:<br />
+
+                a) A person without (PPE) may get a second-degree burn if an arc flash occurs.<br />
+
+                b) A person with (PPE) may get a second-degree burn if an arc flash occurs.<br />
+
+                c) A person without (PPE) will not receive a burn if an arc flash occurs.<br />
+
+                d) A person with (PPE) will not receive a burn if an arc flash occurs.<br />
+            </p>
+
+            <div class="small-12 medium-6 large-3 cell">
+                <label id="a21">Answer Bonus Question.</label>
+                <select onchange="getAnswer21()" type="text" id="answer21">
+                    <option value="sel)"> Select ❓ ➡</option>
+                    <option value="a)">a)</option>
+                    <option value="b)">b)</option>
+                    <option value="c)">c)</option>
+                    <option value="d)">d)</option>
+                </select>
+            </div>
+        </form>
+
+        <!-------------------Next Section  Notes------------------------------------>
+        <form>
+            <hr style="padding-top:10px;" class="notes" />
+            <h4 style="margin-top:20px" class="notes">⚠ Please review answers before submitting ⚠</h4>
+            <hr style="padding-top:3px" />
+
+            <button onclick="printForm()" type="submit" class="button"
+                    form="form5" id="submit" value="Submit">
+                Submit Answers ✅
+            </button>
+        </form>
+    </main>
+    <footer class="rps-footer">
+        <strong>Raptor Power Systems</strong><br />
+        Technical Employment Screening Exam &nbsp;|&nbsp; © Francis J. Aiello
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
