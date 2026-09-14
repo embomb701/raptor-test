@@ -200,7 +200,9 @@ const renderAnswerReview = () => {
     } else {
         const summary = document.createElement('p');
         summary.className = 'review-summary';
-        summary.textContent = `${incorrectAnswers.length} answer${incorrectAnswers.length === 1 ? '' : 's'} need review.`;
+        summary.textContent = incorrectAnswers.length === 1
+            ? '1 answer needs review.'
+            : `${incorrectAnswers.length} answers need review.`;
         review.appendChild(summary);
 
         incorrectAnswers.forEach((item) => {

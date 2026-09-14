@@ -49,6 +49,7 @@ assert.match(incorrect[0].explanation, /LOTO|lockout/i);
 
 assert.match(html, /id="answer-review"[^>]*class="[^"]*hidden/, 'The page needs a hidden answer-review region.');
 assert.match(html, /<button[^>]*type="button"[^>]*id="submit"|<button[^>]*id="submit"[^>]*type="button"/, 'Submit must not reload the page.');
+assert.match(source, /answer needs/, 'Singular review summary must use “answer needs review.”');
 assert.doesNotMatch(source, /audio\.play\(\);/, 'Audio playback promises must be handled instead of producing browser errors.');
 assert.match(source, /\.catch\(\(\) => \{\}\)/, 'Rejected audio playback must be safely caught.');
 
